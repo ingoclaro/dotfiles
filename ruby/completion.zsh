@@ -5,6 +5,10 @@ if [[ ! -o interactive ]]; then
     return
 fi
 
+if test ! $(which rbenv) then
+  return
+fi
+
 compctl -K _rbenv rbenv
 
 _rbenv() {
