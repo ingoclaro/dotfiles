@@ -20,10 +20,6 @@ setopt promptsubst
 
 autoload -U add-zsh-hook
 
-function virtualenv_info {
-    [ $VIRTUAL_ENV ] && echo '('`basename $VIRTUAL_ENV`') '
-}
-
 function prompt_char {
     git status >/dev/null 2>/dev/null && echo '±' && return
     echo '○'
@@ -41,7 +37,7 @@ local git_info='$(git_prompt_info)'
 
 
 PROMPT="╭─%{$FG[040]%}%n%{$reset_color%} %{$FG[239]%}at%{$reset_color%} %{$FG[033]%}$(box_name)%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$FG[226]%}${current_dir} %{$fg[magenta]%}${ruby} %{$reset_color%}${git_info}
-╰─$(virtualenv_info)$(prompt_char) "
+╰─$(prompt_char) "
 
 
 ZSH_THEME_GIT_PROMPT_PREFIX="("
@@ -55,4 +51,3 @@ ZSH_THEME_GIT_PROMPT_DELETED="%{$FG[160]%}✖%{$reset_color%}d"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$FG[220]%}➜%{$reset_color%}r"
 ZSH_THEME_GIT_PROMPT_UNMERGED="%{$FG[082]%}═%{$reset_color%}um"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$FG[190]%}✭%{$reset_color%}ut"
-
