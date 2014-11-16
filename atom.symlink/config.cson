@@ -33,3 +33,5 @@
     'showOnStartup': false
   'release-notes':
     'viewedVersion': '0.89.0'
+  'save-session':
+    'dataSaveFolder': '/Users/ingo/.dotfiles/atom.symlink/packages/save-session/projects'
