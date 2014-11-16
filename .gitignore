@@ -6,3 +6,6 @@ atom.symlink/storage
 atom.symlink/themes
 
 git/gitconfig.symlink
+
+m2.symlink/repository
+
