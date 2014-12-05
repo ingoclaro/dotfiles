@@ -1,6 +1,10 @@
 # avoid the stderr message of boot2docker
-docker-ip() {
+boot2docker-ip() {
   boot2docker ip 2> /dev/null
+}
+
+docker-ip() {
+  docker inspect --format '{{ .NetworkSettings.IPAddress }}' "$@"
 }
 
 export DOCKER_TLS_VERIFY=1
