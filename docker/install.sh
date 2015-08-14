@@ -1,5 +1,4 @@
-brew install docker boot2docker
-boot2docker init -s 50000 -m 4096
-boot2docker start
-echo $(docker-ip) boot2docker | sudo tee -a /etc/hosts
+brew install docker docker-machine
+docker-machine create --driver virtualbox --virtualbox-disk-size 50000 --virtualbox-memory 4096 dev
+sudo route -n add 172.17.0.0/16 $(docker-machine ip dev)
 
