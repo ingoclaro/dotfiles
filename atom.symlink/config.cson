@@ -1,37 +1,51 @@
-'global':
-  'editor':
-    'showIndentGuide': true
-    'fontFamily': 'Menlo'
-    'fontSize': 15
-    'invisibles': {}
-  'core':
-    'ignoredNames': [
-      '.bundle'
-      '.git'
-      'log'
-      'repositories'
-      'tmp'
-      'vendor'
+"*":
+  editor:
+    fontFamily: "Menlo"
+    showIndentGuide: true
+    invisibles: {}
+    fontSize: 19
+  core:
+    ignoredNames: [
+      ".bundle"
+      ".git"
+      "log"
+      "repositories"
+      "tmp"
+      "vendor"
     ]
-    'themes': [
-      'unity-ui'
-      'glacier-syntax'
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
     ]
-    'hideGitIgnoredFiles': true
-    'disabledPackages': [
-      'background-tips'
-      'exception-reporting'
-      'metrics'
+  "spell-check":
+    grammars: [
+      "text.plain"
+      "source.gfm"
+      "text.git-commit"
     ]
-  'spell-check':
-    'grammars': [
-      'text.plain'
-      'source.gfm'
-      'text.git-commit'
+  welcome:
+    showOnStartup: false
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "save-session":
+    windowX: 61
+    windowY: 22
+    windowWidth: 1609
+    windowHeight: 1017
+    dataSaveFolder: "/Users/ingo/.dotfiles/atom.symlink/packages/save-session/projects"
+    project: "/Users/ingo/Sites/frontend/deal"
+    fullScreen: false
+    projects: [
+      "/Users/ingo/Sites/frontend/chassis"
+      "/Users/ingo/Sites/frontend/upstream_checkout-reloaded"
     ]
-  'welcome':
-    'showOnStartup': false
-  'release-notes':
-    'viewedVersion': '0.89.0'
-  'save-session':
-    'dataSaveFolder': '/Users/ingo/.dotfiles/atom.symlink/packages/save-session/projects'
+  "git-blame":
+    ignoreWhiteSpaceDiffs: true
+    customCommitUrlTemplateString: "https://github.groupondev.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  linter: {}
+  emmet: {}
+  react: {}
+  wakatime:
+    apikey: "20c1f040-52ce-477d-84de-04d7081ab873"

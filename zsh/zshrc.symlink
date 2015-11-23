@@ -38,3 +38,4 @@ do
 done
 
 unset config_files
+source /usr/local/dev-env/ansible/mac_profile
