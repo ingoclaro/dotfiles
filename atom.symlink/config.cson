@@ -1,10 +1,25 @@
 "*":
-  editor:
-    fontFamily: "Menlo"
-    showIndentGuide: true
-    invisibles: {}
-    fontSize: 19
   core:
+    customFileTypes:
+      "source.ini": [
+        ".buckconfig"
+        ".flowconfig"
+      ]
+      "source.json": [
+        ".arcconfig"
+        "BUCK.autodeps"
+      ]
+      "source.python": [
+        "BUCK"
+      ]
+    disabledPackages: [
+      "background-tips"
+      "exception-reporting"
+      "metrics"
+      "tree-view"
+      "linter"
+      "wakatime"
+    ]
     ignoredNames: [
       ".bundle"
       ".git"
@@ -13,39 +28,60 @@
       "tmp"
       "vendor"
     ]
-    disabledPackages: [
-      "background-tips"
-      "exception-reporting"
-      "metrics"
-    ]
+  editor:
+    fontFamily: "Menlo"
+    fontSize: 19
+    invisibles: {}
+    showIndentGuide: true
+  emmet: {}
+  "file-watcher":
+    promptWhenFileHasChangedOnDisk: false
+  "git-blame":
+    customCommitUrlTemplateString: "https://github.groupondev.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
+    ignoreWhiteSpaceDiffs: true
+    useCustomUrlTemplateIfStandardRemotesFail: true
+  linter: {}
+  nuclide:
+    "nuclide-arcanist": {}
+    "nuclide-buck-files": {}
+    "nuclide-clang-atom": {}
+    "nuclide-console": {}
+    "nuclide-datatip": {}
+    "nuclide-debugger-hhvm": {}
+    "nuclide-file-tree":
+      revealFileOnSwitch: true
+    "nuclide-flow": {}
+    "nuclide-format-js": {}
+    "nuclide-hack": {}
+    "nuclide-health": {}
+    "nuclide-home":
+      showHome: false
+    "nuclide-ios-simulator-logs": {}
+    "nuclide-ocaml": {}
+    "nuclide-output": {}
+    "nuclide-python": {}
+    "nuclide-react-native": {}
+    "nuclide-remote-ctags":
+      disableWithHack: false
+    "nuclide-working-sets": {}
+  react: {}
+  "release-notes":
+    viewedVersion: "0.89.0"
+  "save-session":
+    dataSaveFolder: "/Users/ingo/.dotfiles/atom.symlink/packages/save-session/projects"
+    fullScreen: false
+    windowHeight: 1017
+    windowWidth: 1609
+    windowX: 61
+    windowY: 22
   "spell-check":
     grammars: [
       "text.plain"
       "source.gfm"
       "text.git-commit"
     ]
+  "tool-bar": {}
+  wakatime:
+    apikey: "Saved in your ~/.wakatime.cfg file"
   welcome:
     showOnStartup: false
-  "release-notes":
-    viewedVersion: "0.89.0"
-  "save-session":
-    windowX: 61
-    windowY: 22
-    windowWidth: 1609
-    windowHeight: 1017
-    dataSaveFolder: "/Users/ingo/.dotfiles/atom.symlink/packages/save-session/projects"
-    project: "/Users/ingo/Sites/frontend/deal"
-    fullScreen: false
-    projects: [
-      "/Users/ingo/Sites/frontend/chassis"
-      "/Users/ingo/Sites/frontend/upstream_checkout-reloaded"
-    ]
-  "git-blame":
-    ignoreWhiteSpaceDiffs: true
-    customCommitUrlTemplateString: "https://github.groupondev.com/<%- project %>/<%- repo %>/commit/<%- revision %>"
-    useCustomUrlTemplateIfStandardRemotesFail: true
-  linter: {}
-  emmet: {}
-  react: {}
-  wakatime:
-    apikey: "20c1f040-52ce-477d-84de-04d7081ab873"
