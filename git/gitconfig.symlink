@@ -28,7 +28,10 @@
         promote = !$ZSH/bin/git-promote
         wtf     = !$ZSH/bin/git-wtf
         rank-contributors = !$ZSH/bin/git-rank-contributors
-        count   = !git shortlog -sn
+	count   = !git shortlog -sn
+	# Follow evolution of certain lines in a file
+	# arg1=file, arg2=first line, arg3=last line or blank for just the first line
+	follow = "!sh -c 'git log --topo-order -u -L $2,${3:-$2}:"$1"'" -
 [color]
         diff = auto
         status = auto

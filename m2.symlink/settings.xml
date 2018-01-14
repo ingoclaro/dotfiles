@@ -24,7 +24,7 @@
             <id>groupon</id>
 
             <!-- artifact repositories. Use the content aggregation -->
-            <!-- from nexus to allow access to all content          -->
+            <!-- from nexus to allow access to all content -->
             <repositories>
                 <repository>
                     <id>central</id>
@@ -55,6 +55,7 @@
                     </snapshots>
                 </repository>
             </repositories>
+
             <!-- plugin repositories. Use the content aggregation -->
             <!-- from nexus to allow access to all content        -->
             <pluginRepositories>
@@ -88,12 +89,12 @@
                 </pluginRepository>
             </pluginRepositories>
         </profile>
+    </profiles>
 
-
-        <!-- list the groupon profile as active. This enables the repo   -->
-        <!-- settings. do not confuse with the "activeByDefault' profile -->
-        <!-- (which declares a profile as the default profile when no    -->
-        <!-- other profile has been activated.                           --> </profiles>
+    <!-- list the groupon profile as active. This enables the repo -->
+    <!-- settings. do not confuse with the "activeByDefault' profile -->
+    <!-- (which declares a profile as the default profile when no -->
+    <!-- other profile has been activated. -->
     <activeProfiles>
         <activeProfile>groupon</activeProfile>
     </activeProfiles>
