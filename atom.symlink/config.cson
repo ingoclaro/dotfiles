@@ -28,6 +28,7 @@
       "tmp"
       "vendor"
     ]
+    telemetryConsent: "no"
   editor:
     fontFamily: "Menlo"
     fontSize: 19
