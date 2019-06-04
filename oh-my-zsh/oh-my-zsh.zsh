@@ -7,6 +7,13 @@ export ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="spaceship"
 
+# spaceship theme configuration
+# https://github.com/denysdovhan/spaceship-prompt/blob/master/docs/Options.md
+SPACESHIP_PACKAGE_SHOW="false"
+SPACESHIP_NODE_DEFAULT_VERSION="12"
+SPACESHIP_EXIT_CODE_SHOW="true"
+SPACESHIP_KUBECONTEXT_SHOW="false"
+
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
